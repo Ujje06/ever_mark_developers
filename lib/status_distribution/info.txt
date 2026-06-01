@@ -1,0 +1,98 @@
+🧠 WHY THIS STRUCTURE IS GOOD
+📦 model/
+
+Contains:
+
+StatusData
+
+Represents one chart item.
+
+Example:
+
+Interested = 45
+🧩 widgets/
+
+Small reusable pieces.
+
+Example:
+
+chart only
+legend only
+title only
+
+Cleaner architecture.
+
+⚙️ services/
+
+Used later for:
+
+percentage calculations
+total calculations
+formatting
+
+Very scalable.
+
+🛠 utils/
+
+Optional helpers.
+
+Example:
+
+generate colors
+format labels
+🚀 FILES TO MAKE FIRST (IMPORTANT ORDER)
+✅ STEP 1
+
+Create model:
+
+model/status_data.dart
+✅ STEP 2
+
+Create chart widget:
+
+widgets/status_chart.dart
+✅ STEP 3
+
+Create legend widget:
+
+widgets/status_legend.dart
+✅ STEP 4
+
+Create main card:
+
+status_distribution_card.dart
+🎯 CHART PACKAGE
+
+Use:
+
+fl_chart Official Package
+
+This is one of the BEST Flutter chart libraries.
+
+✅ ADD THIS TO pubspec.yaml
+dependencies:
+  fl_chart: ^0.68.0
+
+Then run:
+
+flutter pub get
+🚀 PROFESSIONAL BENEFITS
+
+Later you can:
+
+connect real API
+animate chart
+add gradients
+add touch interactions
+support dark mode
+support live updates
+
+WITHOUT changing HomeScreen.
+
+✅ FINAL RESULT
+
+Your HomeScreen stays CLEAN:
+
+StatusDistributionCard(data: data)
+
+That’s the goal of reusable architecture.

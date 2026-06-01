@@ -1,0 +1,134 @@
+lib/
+│
+├── core/                          → Shared global code used in many places
+│   │
+│   ├── config/                    → App settings / constants / theme / route names
+│   │   ├── app_constants.dart     → Static values, URLs, keys, app name
+│   │   ├── app_theme.dart         → Light theme / dark theme
+│   │   └── app_routes.dart        → Route path constants
+│   │
+│   ├── services/                  → External operations
+│   │   ├── api_service.dart       → API GET/POST calls
+│   │   └── local_storage_service.dart → SharedPreferences / local save
+│   │
+│   └── utils/                     → Helper functions
+│       ├── validators.dart        → Email/password/mobile validators
+│       └── date_formatter.dart    → Date formatting helpers
+│
+├── data/                          → Data source handling layer
+│   │
+│   ├── models/                    → JSON models
+│   │   ├── user_model.dart        → User JSON model
+│   │   └── post_model.dart        → Post JSON model
+│   │
+│   └── repositories/              → Middle layer between UI and data source
+│       ├── user_repository.dart   → User data fetch/store logic
+│       └── post_repository.dart   → Post data fetch/store logic
+│
+├── domain/                        → Pure business logic layer
+│   │
+│   ├── entities/                  → Clean data classes
+│   │   ├── user_entity.dart       → User entity
+│   │   └── post_entity.dart       → Post entity
+│   │
+│   └── usecases/                  → Main operations of app
+│       ├── fetch_user_usecase.dart   → Get user data
+│       └── fetch_posts_usecase.dart  → Get posts data
+│
+├── presentation/                  → UI layer
+│   │
+│   ├── pages/                     → Full screens
+│   │   └── home/
+│   │       ├── home_page.dart       → Home screen UI
+│   │       ├── home_viewmodel.dart  → ViewModel logic
+│   │       ├── home_bloc.dart       → Bloc logic
+│   │       ├── home_event.dart      → Events
+│   │       └── home_state.dart      → States
+│   │
+│   ├── widgets/                   → Reusable UI widgets
+│   │   ├── custom_button.dart     → Reusable button
+│   │   └── custom_textfield.dart  → Reusable textfield
+│   │
+│   └── themes/                    → UI design files
+│       ├── colors.dart            → App colors
+│       └── typography.dart        → Fonts / text styles
+│
+├── resources/                     → Static assets
+│   │
+│   ├── images/                    → PNG/JPG/SVG images
+│   ├── fonts/                     → Custom fonts
+│   └── translations/              → Multi-language files
+│
+├── di/                            → Dependency Injection setup
+│   └── dependency_injection.dart  → Register services/controllers
+│
+└── routes/                        → Navigation system
+    └── app_router.dart           → GoRouter / Navigator routes
+
+
+
+
+
+
+
+
+
+
+    💎 What You Have Now
+
+    Flow becomes:
+
+    UI
+    ↓
+    UseCase
+    ↓
+    Repository
+    ↓
+    LocalDataSource
+    ↓
+    SQLite
+
+    That is real structure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Let’s say user opens screen:
+
+    🔹 STEP 1: UI starts
+    EmployeeScreen loads
+    🔹 STEP 2: Provider called
+    fetchEmployees()
+    🔹 STEP 3: Repository called
+    getEmployees()
+    🔹 STEP 4: API call
+    GET /api/Employee
+    🔹 STEP 5: Data returns
+    [ { "employeeName": "Ujjwal" } ]
+    🔹 STEP 6: Model conversion
+    JSON → Employee object
+    🔹 STEP 7: Provider updates state
+    employeeList updated
+    🔹 STEP 8: UI rebuilds automatically
+    ListView shows data
+
+
+
+

@@ -1,0 +1,172 @@
+This layer should handle:
+
+API URLs
+HTTP requests
+JSON parsing
+Models
+CRUD operations
+Error handling
+Database entities
+Repositories
+Services
+
+
+======================//// working of databse and api ////==============
+
+
+
+database_api/
+│
+├── config/
+│   │
+│   └── api_constants.dart
+│       → Stores:
+│         - Base API URL
+│         - API endpoints
+│         - Common constants
+│
+│         Example:
+│         - https://localhost:5001/api
+│         - /employees
+│         - timeout values
+│
+│────────────────────────────────────
+│
+├── models/
+│   │
+│   └── employee_model.dart
+│       → Represents Employee data object
+│
+│       Handles:
+│         - Employee class
+│         - fromJson()
+│         - toJson()
+│         - parsing API response
+│
+│       Example:
+│         API JSON → Dart Object
+│
+│────────────────────────────────────
+│
+├── services/
+│   │
+│   ├── api_service.dart
+│   │   → Generic reusable API handler
+│   │
+│   │   Handles:
+│   │     - GET requests
+│   │     - POST requests
+│   │     - PUT requests
+│   │     - DELETE requests
+│   │     - headers
+│   │     - common HTTP logic
+│   │
+│   │   Used by:
+│   │     employee_service.dart
+│   │
+│   └── employee_service.dart
+│       → Employee-specific API calls
+│
+│       Handles:
+│         - fetchEmployees()
+│         - addEmployee()
+│         - updateEmployee()
+│         - deleteEmployee()
+│
+│       Talks directly to ASP.NET API
+│
+│────────────────────────────────────
+│
+├── repositories/
+│   │
+│   └── employee_repository.dart
+│       → Middle layer between UI and services
+│
+│       Handles:
+│         - business logic
+│         - deciding data source
+│         - clean architecture flow
+│
+│       UI NEVER directly talks to services
+│
+│       Flow:
+│         UI → Repository → Service
+│
+│────────────────────────────────────
+│
+├── providers/
+│   │
+│   └── employee_provider.dart
+│       → State management layer
+│
+│       Handles:
+│         - loading states
+│         - notifyListeners()
+│         - storing employee list
+│         - calling repository methods
+│         - updating UI automatically
+│
+│       Connects:
+│         Flutter UI ↔ Repository
+│
+│────────────────────────────────────
+│
+├── utils/
+│   │
+│   ├── api_response.dart
+│   │   → Common API response wrapper
+│   │
+│   │   Handles:
+│   │     - success response
+│   │     - error response
+│   │     - status messages
+│   │
+│   │   Example:
+│   │     status
+│   │     message
+│   │     data
+│   │
+│   └── exception_handler.dart
+│       → Handles exceptions/errors
+│
+│       Handles:
+│         - timeout exception
+│         - no internet
+│         - server errors
+│         - 404 errors
+│         - parsing errors
+│
+│────────────────────────────────────
+│
+└── helpers/
+    │
+    └── json_parser.dart
+        → Helper functions for parsing/converting data
+
+        Handles:
+          - JSON helper methods
+          - safe parsing
+          - conversion helpers
+          - reusable formatter functions
+
+
+
+
+
+
+
+
+
+
+
+
+Employee Service
+      ↓
+Api Service
+      ↓
+HTTP Request
+      ↓
+ASP.NET API
+
+
+
