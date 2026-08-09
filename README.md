@@ -116,6 +116,14 @@ New features and improvements will be added as the project progresses.
 
 Developed using **Flutter & Dart** as a practical employee management application project.
 
+![Splash Screen](Screenshots/first.png)
+![Login Screen](Screenshots/second.jpeg)
+![Home Screen](Screenshots/three.png)
+![Employee Screen](Screenshots/four.png)
+![Profile Screen](Screenshots/five.png)
+
+
+
 ## 📄 License
 
 This project is intended for educational and development purposes.
