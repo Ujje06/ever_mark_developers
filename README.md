@@ -1,34 +1,121 @@
-# ever_mark_developers
+# EverMark Developers – Employee Application
 
-evermark developers employee's application
+A Flutter-based employee management application developed for **EverMark Developers**.
 
-## Getting Started
+The application is designed to provide employees with a simple and organized platform for managing attendance, employee information, leave requests, and other workplace-related activities.
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+* 👤 Employee Login & Authentication
+* 📋 Employee Profile & Information
+* 🕐 Attendance Management
+* 📝 Leave Management
+* 📊 Employee Dashboard
+* 🔔 Notifications and Updates
+* 💾 Local Data Storage
+* 🎨 Modern & Responsive Flutter UI
+* 🧭 Organized Navigation
+* 🔐 Secure Application Flow
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 🛠️ Technologies Used
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **Flutter**
+* **Dart**
+* **SQLite**
+* **Android Studio**
+* **Git & GitHub**
 
-<img width="478" height="952" alt="three" src="https://github.com/user-attachments/assets/42f475f1-39a5-478e-95ee-9d62a086a946" />
-Splash screen with moving stars galxy pattern and infinite smooth animation (light weight dosnt take to much resources) including 3-4 animations
+## 📱 Application Structure
 
-<img width="542" height="950" alt="second" src="https://github.com/user-attachments/assets/734bf195-5b22-473b-bc70-d39fd909bd97" />
-Login with Sql Database using api made form asp.net web application 
+The application includes:
 
-<img width="487" height="948" alt="four" src="https://github.com/user-attachments/assets/6c7b0448-905e-40b5-b0ab-4aa67738e0f8" />
-Home Dashboard screen having notification icon , burger menu, bnotton navigation bar and scrollable content including cards and horizontal / vertical carousel view.
+* Splash Screen
+* Login Screen
+* Home Dashboard
+* Employee Profile
+* Attendance
+* Leave Management
+* Navigation Drawer
+* Bottom Navigation
+* Local Database
 
-<img width="485" height="953" alt="five" src="https://github.com/user-attachments/assets/e769820c-30db-4b3e-9a39-6a1956ac2243" />
-One of the bottom navigation page.
+## 📂 Project Structure
 
-<img width="485" height="943" alt="first" src="https://github.com/user-attachments/assets/90028aed-8826-4107-a1a8-b7a3779f80c9" />
-notification icon makes background blurr and etc.
+```text
+lib/
+├── database/
+│   ├── local_db/
+│   ├── database_helper.dart
+│   └── tables.dart
+│
+├── navigation/
+│   ├── app_navigator.dart
+│   └── app_routes.dart
+│
+├── screens/
+│   ├── splash/
+│   ├── login/
+│   ├── home/
+│   └── profile/
+│
+├── widgets/
+│   ├── glass_card.dart
+│   ├── animated_logo.dart
+│   └── custom_widgets.dart
+│
+└── main.dart
+```
 
-thankyou
+## 🎯 Purpose
+
+The main goal of this project is to build a practical employee management application while implementing real-world Flutter development concepts such as:
+
+* Application architecture
+* Navigation
+* Local database management
+* UI/UX development
+* State management
+* Form handling
+* Authentication flow
+* Reusable widgets
+* Responsive layouts
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Navigate to the project
+
+```bash
+cd ever_mark_developers
+```
+
+### 3. Install dependencies
+
+```bash
+flutter pub get
+```
+
+### 4. Run the application
+
+```bash
+flutter run
+```
+
+## 📌 Project Status
+
+**Currently in development 🚧**
+
+New features and improvements will be added as the project progresses.
+
+## 👨‍💻 Developer
+
+Developed using **Flutter & Dart** as a practical employee management application project.
+
+## 📄 License
+
+This project is intended for educational and development purposes.
