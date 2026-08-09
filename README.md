@@ -17,7 +17,18 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 <img width="478" height="952" alt="three" src="https://github.com/user-attachments/assets/42f475f1-39a5-478e-95ee-9d62a086a946" />
+Splash screen with moving stars galxy pattern and infinite smooth animation (light weight dosnt take to much resources) including 3-4 animations
+
 <img width="542" height="950" alt="second" src="https://github.com/user-attachments/assets/734bf195-5b22-473b-bc70-d39fd909bd97" />
+Login with Sql Database using api made form asp.net web application 
+
 <img width="487" height="948" alt="four" src="https://github.com/user-attachments/assets/6c7b0448-905e-40b5-b0ab-4aa67738e0f8" />
+Home Dashboard screen having notification icon , burger menu, bnotton navigation bar and scrollable content including cards and horizontal / vertical carousel view.
+
 <img width="485" height="953" alt="five" src="https://github.com/user-attachments/assets/e769820c-30db-4b3e-9a39-6a1956ac2243" />
+One of the bottom navigation page.
+
 <img width="485" height="943" alt="first" src="https://github.com/user-attachments/assets/90028aed-8826-4107-a1a8-b7a3779f80c9" />
+notification icon makes background blurr and etc.
+
+thankyou
